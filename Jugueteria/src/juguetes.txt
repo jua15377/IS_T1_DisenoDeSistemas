@@ -1,0 +1,7 @@
+abc1, matel, 100, 1, 5, 201
+abc2, suli, 5.5, 2, 5, 200
+abc3, marvel, 45.5, 3, 5, 201
+abc4, dceu, 102.2, 4, 5, 200
+abc5, chafa, 0.9, 5, 5, 200
+abc6, pro, 10, 60, 5, 201
+abc7, chapin, 15, 5, 5, 200
