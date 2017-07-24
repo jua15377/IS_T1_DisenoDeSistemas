@@ -1,5 +1,4 @@
 
-import java.util.Comparator;
 
 /*
  * To change this license header, choose License Headers in Project Properties.
@@ -11,29 +10,29 @@ import java.util.Comparator;
  *
  * @author Rodrigo
  */
-public class JuegueteElectrico extends Jueguete implements Comparator<JuegueteElectrico>{
-    
+public class JuegueteElectrico extends Jueguete implements Comparable<JuegueteElectrico>{
+    double valorFinal = this.getValorUnitario()+2*this.getValorAgregado();
     public JuegueteElectrico(String codigo, String marca, double valorUnitario, double valorAgregado, int edadMinima, int numProveedor) {
         super(codigo, marca, valorUnitario, valorAgregado, edadMinima, numProveedor);
     }
-    public double valorFinal(double valorUnitario, double vAdicional){
-        return valorUnitario + 2*vAdicional;
+
+    public double valorFinal() {
+        return valorFinal;
     }
     
     @Override
-    public int compare(JuegueteElectrico e1, JuegueteElectrico e2){
-        double valor1 = e1.valorFinal(e1.getValorUnitario(), e1.getValorAgregado());
-        double valor2 = e2.valorFinal(e2.getValorUnitario(), e2.getValorAgregado());
-        return new Double(valor1).compareTo(valor2);
-        /*
-        if (e1.valorFinal(e1.getValorUnitario(), e1.getValorAgregado()) <  e2.valorFinal(e2.getValorUnitario(), e2.getValorAgregado())){
-            return -1;
-        }
-        else if (e1.valorFinal(e1.getValorUnitario(), e1.getValorAgregado()) >  e2.valorFinal(e2.getValorUnitario(), e2.getValorAgregado())){
-            return 1;
-        }
-        else
-            return 0;
-    }*/
+    public int compareTo(JuegueteElectrico e1){
+        
+        return new Double(e1.valorFinal).compareTo(this.valorFinal);
+    }
+
+    @Override
+    public String toString() {
+        return "JuegueteElectrico{" + "valorFinal=" + valorFinal + '}';
+    }
+    
 }
-}
+  
+
+
+

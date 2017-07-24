@@ -5,6 +5,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
+import java.util.List;
 
 /*
  * To change this license header, choose License Headers in Project Properties.
@@ -17,12 +18,7 @@ import java.util.Comparator;
  * @author Rodrigo
  */
 public class ControlJugueteria {
-    ArrayList<JuegueteElectrico> losJuguetes = new ArrayList<>();
-    
-    public void sortElectricos(){
-        //losJuguetes.sort(losJuguetes, (Comparator<Double>) losJuguetes.);
-        
-    }
+    List<JuegueteElectrico> losJuguetes = new ArrayList<JuegueteElectrico>();
     public void leerElectricos(){
         BufferedReader br = null;
         try {
@@ -46,9 +42,14 @@ public class ControlJugueteria {
             }
         }
     }
-
-    public ArrayList<JuegueteElectrico> getLosJuguetes() {
+    public void sortElectricos(){
+        Comparator.comparingDouble(JuegueteElectrico::valorFinal) ;
+        Collections.sort(losJuguetes);
+        
+    }
+    public List<JuegueteElectrico> getLosJuguetes() {
         return losJuguetes;
     }
+  
     
 }

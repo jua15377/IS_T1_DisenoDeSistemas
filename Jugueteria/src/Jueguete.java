@@ -69,6 +69,11 @@ public class Jueguete {
     public void setNumProveedor(int numProveedor) {
         this.numProveedor = numProveedor;
     }
+
+    @Override
+    public String toString() {
+        return "Jueguete{" + "codigo=" + codigo + ", marca=" + marca + ", valorUnitario=" + valorUnitario + ", valorAgregado=" + valorAgregado + ", edadMinima=" + edadMinima + ", numProveedor=" + numProveedor + '}';
+    }
     
     
 }

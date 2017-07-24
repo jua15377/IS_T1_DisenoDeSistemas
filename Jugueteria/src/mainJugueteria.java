@@ -1,3 +1,6 @@
+
+import java.util.ArrayList;
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -11,9 +14,13 @@
 public class mainJugueteria {
     public static void main(String[] args){
         ControlJugueteria miControl = new ControlJugueteria();
+        
         miControl.leerElectricos();
+        System.out.println(""+miControl.getLosJuguetes());
         miControl.sortElectricos();
-        miControl.getLosJuguetes();
+        System.out.println(""+miControl.getLosJuguetes());
+        
+        
         
     }
 }
