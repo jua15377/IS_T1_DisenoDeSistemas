@@ -13,6 +13,15 @@ public class Jueguete {
     private double valorUnitario, valorAgregado;
     private int edadMinima, numProveedor;
 
+    public Jueguete(String codigo, String marca, double valorUnitario, double valorAgregado, int edadMinima, int numProveedor) {
+        this.codigo = codigo;
+        this.marca = marca;
+        this.valorUnitario = valorUnitario;
+        this.valorAgregado = valorAgregado;
+        this.edadMinima = edadMinima;
+        this.numProveedor = numProveedor;
+    }
+
     public String getCodigo() {
         return codigo;
     }
