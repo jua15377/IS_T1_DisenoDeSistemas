@@ -19,9 +19,9 @@ public class mainJugueteria {
 
         ControlJugueteria miControl = new ControlJugueteria();
         miControl.leerElectricos();
-        System.out.println(""+miControl.getLosJuguetes());
+        System.out.println("Antes de ordenar "+miControl.getLosJuguetes());
         miControl.sortElectricos();
-        System.out.println(""+miControl.getLosJuguetes());
+        System.out.println("Ordenados por precio final"+miControl.getLosJuguetes());
 
         System.out.println("\nIngrese la complejidad deseada de los juguetes Mecanicos: ");
         int n = sc.nextInt();
