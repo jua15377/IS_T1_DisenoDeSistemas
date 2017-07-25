@@ -21,21 +21,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="ControlJugueteria.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Jugueteria/src/ControlJugueteria.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="748">
-              <caret line="50" column="104" selection-start-line="50" selection-start-column="104" selection-end-line="50" selection-end-column="104" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Jueguete.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Jugueteria/src/Jueguete.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="544">
-              <caret line="55" column="0" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
+            <state relative-caret-position="289">
+              <caret line="24" column="21" selection-start-line="24" selection-start-column="21" selection-end-line="24" selection-end-column="21" />
               <folding />
             </state>
           </provider>
@@ -51,22 +41,34 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="JuegueteMecanico.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="JuegueteMecanico.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Jugueteria/src/JuegueteMecanico.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="14" column="150" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="150" />
+            <state relative-caret-position="221">
+              <caret line="17" column="5" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="mainJugueteria.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ControlJugueteria.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Jugueteria/src/ControlJugueteria.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="623">
+              <caret line="93" column="55" selection-start-line="93" selection-start-column="55" selection-end-line="93" selection-end-column="55" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mainJugueteria.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Jugueteria/src/mainJugueteria.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="544">
+              <caret line="32" column="8" selection-start-line="32" selection-start-column="8" selection-end-line="32" selection-end-column="8" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -94,9 +96,9 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Jugueteria/src/mainJugueteria.java" />
-        <option value="$PROJECT_DIR$/Jugueteria/src/ControlJugueteria.java" />
         <option value="$PROJECT_DIR$/Jugueteria/src/JuegueteMecanico.java" />
+        <option value="$PROJECT_DIR$/Jugueteria/src/ControlJugueteria.java" />
+        <option value="$PROJECT_DIR$/Jugueteria/src/mainJugueteria.java" />
       </list>
     </option>
   </component>
@@ -139,6 +141,16 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="IS_T1_DisenoDeSistemas" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="IS_T1_DisenoDeSistemas" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="IS_T1_DisenoDeSistemas" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -308,14 +320,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Jugueteria/src/Jueguete.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="55" column="0" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Principal.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -324,10 +328,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Jugueteria/src/mainJugueteria.java">
+    <entry file="file://$PROJECT_DIR$/Jugueteria/src/JuegueteMecanico.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+        <state relative-caret-position="221">
+          <caret line="17" column="5" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Jugueteria/src/Jueguete.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="24" column="21" selection-start-line="24" selection-start-column="21" selection-end-line="24" selection-end-column="21" />
           <folding />
         </state>
       </provider>
@@ -342,17 +354,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Jugueteria/src/ControlJugueteria.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="748">
-          <caret line="50" column="104" selection-start-line="50" selection-start-column="104" selection-end-line="50" selection-end-column="104" />
+        <state relative-caret-position="623">
+          <caret line="93" column="55" selection-start-line="93" selection-start-column="55" selection-end-line="93" selection-end-column="55" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Jugueteria/src/JuegueteMecanico.java">
+    <entry file="file://$PROJECT_DIR$/Jugueteria/src/mainJugueteria.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="14" column="150" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="150" />
-          <folding />
+        <state relative-caret-position="544">
+          <caret line="32" column="8" selection-start-line="32" selection-start-column="8" selection-end-line="32" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

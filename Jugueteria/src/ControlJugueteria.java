@@ -20,6 +20,7 @@ import java.util.List;
 public class ControlJugueteria {
     List<JuegueteElectrico> losJuguetes = new ArrayList<JuegueteElectrico>();
     List<JuegueteMecanico> losJuguetesMecanicos = new ArrayList<JuegueteMecanico>();
+    List<JuegueteMecanico> MecanicosXComplejidad = new ArrayList<JuegueteMecanico>();
 
     public void leerElectricos(){
         BufferedReader br = null;
@@ -54,7 +55,7 @@ public class ControlJugueteria {
             {
                 //String tmp = br.readLine();
                 String[] palabras = linea.split(", ");
-                JuegueteElectrico eljuguete = new JuegueteElectrico(palabras[0],palabras[1],Double.parseDouble(palabras[2]),Double.parseDouble(palabras[3]),Integer.parseInt(palabras[4]),Integer.parseInt(palabras[5]));
+                JuegueteElectrico eljuguete = new JuegueteElectrico(palabras[0],palabras[1],Double.parseDouble(palabras[2]),Double.parseDouble(palabras[3]),Integer.parseInt(palabras[4]),Integer.parseInt(palabras[5]), Integer.parseInt[palabras[6]]);
                 losJuguetes.add(eljuguete);
             }
         } catch (IOException e) {
@@ -75,9 +76,29 @@ public class ControlJugueteria {
         Collections.sort(losJuguetes);
         
     }
+    public void sortMecanicos(int n){
+        if (n > 3 || n < 1){
+            break;
+        }
+        for (JugueteMecanico i : losJuguetesMecanicos){
+            if (i.getComplejidad() == n){
+                MecanicosXComplejidad.add(i);
+            }
+        }
+
+    }
+
+    public String impresionMecanicos(){
+        String resultado = "";
+        for (JugueteMecanico i : MecanicosXComplejidad){
+            resultado = resultado + i.getCodigo() + ", ";
+        }
+    }
+
     public List<JuegueteElectrico> getLosJuguetes() {
         return losJuguetes;
     }
+    public List<JuegueteMecanico> getlosJuguetesMecanicos(){ return losJuguetesMecanicos; }
   
     
 }
