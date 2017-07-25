@@ -12,8 +12,9 @@ public class JuegueteMecanico extends Jueguete{
     private int complejidad;
     private double vAdicional;
 
-    public JuegueteMecanico(String codigo, String marca, double valorUnitario, double valorAgregado, int edadMinima, int numProveedor) {
+    public JuegueteMecanico(String codigo, String marca, double valorUnitario, double valorAgregado, int edadMinima, int numProveedor, int complejidad) {
         super(codigo, marca, valorUnitario, valorAgregado, edadMinima, numProveedor);
+        this.complejidad = complejidad;
     }
 
     public int getComplejidad() {

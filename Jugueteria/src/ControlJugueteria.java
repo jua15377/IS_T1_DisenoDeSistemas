@@ -19,6 +19,8 @@ import java.util.List;
  */
 public class ControlJugueteria {
     List<JuegueteElectrico> losJuguetes = new ArrayList<JuegueteElectrico>();
+    List<JuegueteMecanico> losJuguetesMecanicos = new ArrayList<JuegueteMecanico>();
+
     public void leerElectricos(){
         BufferedReader br = null;
         try {
@@ -42,6 +44,32 @@ public class ControlJugueteria {
             }
         }
     }
+
+    public void leerMecanicos(){
+        BufferedReader br = null;
+        try {
+            br = new BufferedReader(new FileReader(System.getProperty("user.dir") + "\\juguetesMecanicos.txt"));
+            String linea;
+            while((linea = br.readLine()) != null)
+            {
+                //String tmp = br.readLine();
+                String[] palabras = linea.split(", ");
+                JuegueteElectrico eljuguete = new JuegueteElectrico(palabras[0],palabras[1],Double.parseDouble(palabras[2]),Double.parseDouble(palabras[3]),Integer.parseInt(palabras[4]),Integer.parseInt(palabras[5]));
+                losJuguetes.add(eljuguete);
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        } finally {
+            try {
+                if (br != null)
+                    br.close();
+            } catch (IOException ex) {
+                ex.printStackTrace();
+            }
+        }
+    }
+
+
     public void sortElectricos(){
         Comparator.comparingDouble(JuegueteElectrico::valorFinal) ;
         Collections.sort(losJuguetes);
