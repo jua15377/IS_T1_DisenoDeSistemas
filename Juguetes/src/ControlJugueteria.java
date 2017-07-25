@@ -112,10 +112,12 @@ public class ControlJugueteria {
             String linea;
             while((linea = br.readLine()) != null)
             {
-                //String tmp = br.readLine();
-                String[] palabras = linea.split(", ");
-                Proveedor elProveedor = new Proveedor(palabras[0],Integer.parseInt(palabras[1]),Integer.parseInt(palabras[2]),Integer.parseInt(palabras[3]));
-                losProveedores.add(elProveedor);
+                if(linea.length() > 0) {
+                    //String tmp = br.readLine();
+                    String[] palabras = linea.split(", ");
+                    Proveedor elProveedor = new Proveedor(palabras[0], Integer.parseInt(palabras[1]), Integer.parseInt(palabras[2]), Integer.parseInt(palabras[3]));
+                    losProveedores.add(elProveedor);
+                }
             }
         } catch (IOException e) {
                 e.printStackTrace();
@@ -146,9 +148,10 @@ public class ControlJugueteria {
         }
     }
     public void crearProveedor(Proveedor proveedor){
+        String texto;
         try {
-            String texto = "\n" + proveedor.toString();
-                    Writer output;
+            texto = proveedor.toString();
+            Writer output;
             output = new BufferedWriter(new FileWriter(System.getProperty("user.dir") + "\\proveedores.txt",true));  //clears file every time
             output.append(texto);
             output.close();
@@ -156,7 +159,28 @@ public class ControlJugueteria {
             //exception handling left as an exercise for the reader
         }
     }
-    public void eliminarProveedor(){
-
+    public void eliminarProveedor(int numeroDeProv) {
+        leerProveedores();
+        for (int x = 0; x < losProveedores.size(); x++) {
+            if (losProveedores.get(x).getNumProveedor() == numeroDeProv) {
+                losProveedores.remove(x);
+            }
+        }
+        String texto = "";
+        try {
+            for (int x = 0; x < losProveedores.size(); x++) {
+                texto += losProveedores.get(x).toString();
+            }
+            Writer output;
+            output = new BufferedWriter(new FileWriter(System.getProperty("user.dir") + "\\proveedores.txt"));  //clears file every time
+            output.append(texto);
+            output.close();
+        } catch (IOException e) {
+            //exception handling left as an exercise for the reader
+        }
+    }
+    public void updateProveedor(int numero, Proveedor proveedor){
+        eliminarProveedor(numero);
+        crearProveedor(proveedor);
     }
 }

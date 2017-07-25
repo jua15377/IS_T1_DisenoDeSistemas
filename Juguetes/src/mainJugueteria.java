@@ -17,7 +17,7 @@ public class mainJugueteria {
         Scanner sc = new Scanner(System.in);
         ControlJugueteria miControl = new ControlJugueteria();
 
-        System.out.println("Menu de Opciones de la Juguetería \n1. Ver cantidad de juguetes por proveedor\n2. Ver juguetes por Complejidad\n3. Agregar provedor\nSelecciona una opcion: ");
+        System.out.println("Menu de Opciones de la Juguetería \n1. Ver cantidad de juguetes por proveedor\n2. Ver juguetes por Complejidad\n3. Agregar provedor \n4. eliminar provedor\n5. actualizar provedor\nSelecciona una opcion: ");
         int seleccion = sc.nextInt();
         if(seleccion==1){
             System.out.println("Usted esta visualizando los proveedores");
@@ -51,6 +51,24 @@ public class mainJugueteria {
             int  cantElecto = sc.nextInt();
             Proveedor nuevoProveedor = new Proveedor(nameProv,numProv,cantMeca,cantElecto);
             miControl.crearProveedor(nuevoProveedor);
+        }
+        else if(seleccion==4) {
+            System.out.println("Ingres el numero de proveedor a eliminar ");
+            int num = sc.nextInt();
+            miControl.eliminarProveedor(num);
+        }
+        else if(seleccion==5){
+            System.out.println("Ingres el numero de proveedor a actualizar");
+            int numProv = sc.nextInt();
+            System.out.println("Los nuevos valores del proveedor ");
+            System.out.println("Ingres el nombre del proveedor ");
+            String nameProv = sc.next();
+            System.out.println("Ingres la cantidad de juguetes mecanicos ");
+            int cantMeca = sc.nextInt();
+            System.out.println("Ingres la cantidad de juguetes electronicos ");
+            int  cantElecto = sc.nextInt();
+            Proveedor nuevoProveedor = new Proveedor(nameProv,numProv,cantMeca,cantElecto);
+            miControl.updateProveedor(numProv,nuevoProveedor);
         }
     }
 }

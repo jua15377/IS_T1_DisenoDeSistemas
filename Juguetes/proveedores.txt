@@ -1,4 +1,6 @@
-Mario, 1, 10, 15
-Juan, 2, 9, 18
-Luis, 3, 8, 14
-Pedro, 4, 5, 2
+
+Luis, 3, 8, 8
+Diego, 1, 11, 11
+Rodrigo, 6, 55, 55
+Gabo, 7, 8, 8
+Carlos, 10, 2, 2

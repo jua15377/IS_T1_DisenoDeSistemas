@@ -59,6 +59,6 @@ public class Proveedor {
         return suma;
     }
     public String toString(){
-        return this.getNombre() + ", " + this.getNumProveedor() + ", " +this.getCantJuguetesMecanicos() + ", " +this.getCantJuguetesMecanicos();
+        return "\n" + this.getNombre() + ", " + this.getNumProveedor() + ", " +this.getCantJuguetesMecanicos() + ", " +this.getCantJuguetesMecanicos();
     }
 }
