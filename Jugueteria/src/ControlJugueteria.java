@@ -19,6 +19,7 @@ import java.util.List;
  */
 public class ControlJugueteria {
     List<JuegueteElectrico> losJuguetes = new ArrayList<JuegueteElectrico>();
+    //List<JuegueteMecanico> losJuguetesM = new ArrayList<JuegueteMecanico>();
     List<JuegueteMecanico> losJuguetesMecanicos = new ArrayList<JuegueteMecanico>();
     List<JuegueteMecanico> MecanicosXComplejidad = new ArrayList<JuegueteMecanico>();
 
@@ -55,8 +56,8 @@ public class ControlJugueteria {
             {
                 //String tmp = br.readLine();
                 String[] palabras = linea.split(", ");
-                JuegueteElectrico eljuguete = new JuegueteElectrico(palabras[0],palabras[1],Double.parseDouble(palabras[2]),Double.parseDouble(palabras[3]),Integer.parseInt(palabras[4]),Integer.parseInt(palabras[5]), Integer.parseInt[palabras[6]]);
-                losJuguetes.add(eljuguete);
+                JuegueteMecanico eljuguetem = new JuegueteMecanico(palabras[0],palabras[1],Double.parseDouble(palabras[2]),Double.parseDouble(palabras[3]),Integer.parseInt(palabras[4]),Integer.parseInt(palabras[5]), Integer.parseInt(palabras[6]));
+                losJuguetesMecanicos.add(eljuguetem);
             }
         } catch (IOException e) {
             e.printStackTrace();
@@ -78,9 +79,9 @@ public class ControlJugueteria {
     }
     public void sortMecanicos(int n){
         if (n > 3 || n < 1){
-            break;
+            //break;
         }
-        for (JugueteMecanico i : losJuguetesMecanicos){
+        for (JuegueteMecanico i : losJuguetesMecanicos){
             if (i.getComplejidad() == n){
                 MecanicosXComplejidad.add(i);
             }
@@ -90,9 +91,10 @@ public class ControlJugueteria {
 
     public String impresionMecanicos(){
         String resultado = "";
-        for (JugueteMecanico i : MecanicosXComplejidad){
+        for (JuegueteMecanico i : MecanicosXComplejidad){
             resultado = resultado + i.getCodigo() + ", ";
         }
+        return resultado;
     }
 
     public List<JuegueteElectrico> getLosJuguetes() {

@@ -18,8 +18,6 @@ public class mainJugueteria {
 
 
         ControlJugueteria miControl = new ControlJugueteria();
-
-        
         miControl.leerElectricos();
         System.out.println(""+miControl.getLosJuguetes());
         miControl.sortElectricos();
