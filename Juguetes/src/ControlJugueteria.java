@@ -6,7 +6,9 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
-
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+import java.io.Writer;
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -143,5 +145,18 @@ public class ControlJugueteria {
             System.out.println("Ningun proveedor coincide con ese codigo.");
         }
     }
-    
+    public void crearProveedor(Proveedor proveedor){
+        try {
+            String texto = "\n" + proveedor.toString();
+                    Writer output;
+            output = new BufferedWriter(new FileWriter(System.getProperty("user.dir") + "\\proveedores.txt",true));  //clears file every time
+            output.append(texto);
+            output.close();
+        }catch (IOException e) {
+            //exception handling left as an exercise for the reader
+        }
+    }
+    public void eliminarProveedor(){
+
+    }
 }

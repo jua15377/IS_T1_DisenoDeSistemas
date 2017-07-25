@@ -1,4 +1,4 @@
 Mario, 1, 10, 15
 Juan, 2, 9, 18
 Luis, 3, 8, 14
-Pedro, 4, 5, 29
+Pedro, 4, 5, 2
